@@ -2,247 +2,137 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML All Tags Project</title>
-    <base href="#">
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Advanced HTML + JS Form Project</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
     <header>
-        <h1>HTML Tags Demonstration Project</h1>
+
+        <h1>Interactive HTML Form Project</h1>
+
         <nav>
-            <a href="#text">Text</a> 
-            <a href="#lists">Lists</a> 
-            <a href="#table">Tables</a> 
-            <a href="#media">Media</a> 
-            <a href="#form">Forms</a>
+
+            <a href="#form">Form</a>
+            <a href="#table">Students</a>
+            <a href="#media">Media</a>
+
         </nav>
+
     </header>
+
 
     <hr>
 
+
     <main>
 
-        <section id="text">
-            <h2>Text Formatting</h2>
-
-            <p>This is a <b>bold</b> text and <strong>important</strong>.</p>
-            <p>This is <i>italic</i> and <em>emphasized</em>.</p>
-            <p>This is <u>underlined</u> and <mark>highlighted</mark>.</p>
-            <p>Deleted <del>text</del> and <ins>inserted</ins> text.</p>
-            <p>Subscript H<sub>2</sub>O and superscript x<sup>2</sup></p>
-
-            <abbr title="Hyper Text Markup Language">HTML</abbr><br>
-            <acronym title="World Wide Web">WWW</acronym><br>
-
-            <cite>Book Title</cite><br>
-            <dfn>Definition term</dfn><br>
-            <kbd>Ctrl + C</kbd><br>
-            <samp>Program Output</samp><br>
-            <var>x</var> variable<br>
-
-            <blockquote>This is a block quote example</blockquote>
-            <q>Inline quote</q>
-
-            <address>
-                Written by Nidharshanaalakshmi
-            </address>
-
-            <bdo dir="rtl">Reverse Text</bdo>
-
-            <pre>
-                This is preformatted
-                text block
-            </pre>
-
-            <code>
-                print("Hello World")
-            </code>
-            <br>
-
-            <time datetime="2026-03-05">March 5, 2026</time>
-
-        </section>
-
-        <hr>
-
-        <section id="lists">
-
-            <h2>Lists</h2>
-
-            <h3>Unordered List</h3>
-            <ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>C#</li>
-            </ul>
-
-            <h3>Ordered List</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ol>
-
-            <h3>Description List</h3>
-            <dl>
-                <dt>HTML</dt>
-                <dd>Structure of web pages</dd>
-
-                <dt>CSS</dt>
-                <dd>Design and styling</dd>
-            </dl>
-
-        </section>
-
-        <hr>
-
-        <section id="table">
-            <h2>Tables</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">Student Detail</td>
-                    </tr>
-                    <tr>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Alice</td>
-                        <td>MCA</td>
-                        <td>2025</td>
-                    </tr>
-                    <tr>
-                        <td>Bob</td>
-                        <td>BCA</td>
-                        <td>2024</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">End of Data</td>
-                    </tr>
-                </tfoot>
-
-            </table>
-
-        </section>
-
-        <hr>
-
-        <section id="media">
-
-            <h2>Media</h2>
-
-            <h3>Image</h3>
-            <figure>
-                <img src="https://via.placeholder.com/150" alt="sample image">
-                <figcaption>Sample Image</figcaption>
-            </figure>
-
-            <h3>Audio</h3>
-            <audio controls>
-                <source src="sample.mp3" type="audio/mpeg">
-            </audio>
-
-            <h3>Video</h3>
-            <video controls>
-                <source src="sample.mp4" type="video/mp4">
-            </video>
-
-            <h3>Embed</h3>
-            <embed src="https://www.example.com" width="300" height="100">
-
-            <h3>Iframe</h3>
-            <iframe src="https://example.com" width="300" height="200"></iframe>
-
-        </section>
-
-        <hr>
-
-        <section>
-
-            <h2>Interactive Elements</h2>
-
-            <details>
-                <summary>Click to Expand</summary>
-                <p>Hidden content revealed</p>
-            </details>
-
-            <meter value="70" min="0" max="100"></meter>
-
-            <progress value="50" max="100"></progress>
-
-        </section>
-
-        <hr>
 
         <section id="form">
 
-            <h2>Forms</h2>
+            <h2>Registration Form</h2>
+
+            <progress value="0" max="100"></progress>
 
             <form>
 
                 <fieldset>
-                    <legend>Contact Form</legend>
+
+                    <legend>Student Details</legend>
+
 
                     <label>Name</label>
                     <input type="text" placeholder="Enter your name"><br><br>
 
+
                     <label>Email</label>
-                    <input type="email" placeholder="Enter your email"><br><br>
+                    <input type="email" placeholder="Enter email"><br><br>
+
 
                     <label>Password</label>
-                    <input type="password" placeholder="Enter your password"><br><br>
+                    <input type="password" placeholder="Enter password"><br><br>
 
-                    <label>Date</label>
+
+                    <label>Date of Birth</label>
                     <input type="date"><br><br>
 
-                    <label>Number</label>
-                    <input type="number" placeholder="Enter a number"><br><br>
 
-                    <label>Range</label>
-                    <input type="range"><br><br>
+                    <label>Age</label>
+                    <input type="number" min="1"><br><br>
 
-                    <label>Color</label>
+
+                    <label>Skill Level</label>
+                    <input type="range" min="0" max="100"><br><br>
+
+
+                    <label>Favorite Color</label>
                     <input type="color"><br><br>
 
-                    <label>File</label>
-                    <input type="file"><br><br>
+
+                    <label>Upload Resume</label>
+                    <input type="file">
+
+
+                    <br><br>
+
 
                     <label>Gender</label>
-                    <input type="radio" name="g">Male
-                    <input type="radio" name="g">Female<br><br>
+
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="radio" name="gender">Other
+
+
+                    <br><br>
+
 
                     <label>Skills</label>
+
                     <input type="checkbox">HTML
                     <input type="checkbox">CSS
-                    <input type="checkbox">JS<br><br>
+                    <input type="checkbox">JavaScript
+                    <input type="checkbox">Python
+
+
+                    <br><br>
+
 
                     <label>Country</label>
 
                     <select>
+
                         <option>India</option>
                         <option>USA</option>
                         <option>UK</option>
+                        <option>Canada</option>
+
                     </select>
 
-                    <br><br>
-
-                    <label>Message</label><br>
-                    <textarea rows="4" cols="30"></textarea>
 
                     <br><br>
+
+
+                    <label>About You</label>
+
+                    <textarea rows="4" cols="40" placeholder="Write something..."></textarea>
+
+
+                    <br><br>
+
 
                     <button type="submit">Submit</button>
+                    <p id="formMessage"></p>
+
                     <button type="reset">Reset</button>
+
+
 
                 </fieldset>
 
@@ -250,23 +140,158 @@
 
         </section>
 
+
+        <hr>
+
+
+        <section id="table">
+
+            <h2>Student List</h2>
+
+            <table>
+
+                <caption>Student Data</caption>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Alice</td>
+                        <td>MCA</td>
+                        <td>2025</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Bob</td>
+                        <td>BCA</td>
+                        <td>2024</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Charlie</td>
+                        <td>B.Tech</td>
+                        <td>2026</td>
+
+                    </tr>
+
+                </tbody>
+
+
+                <tfoot>
+
+                    <tr>
+
+                        <td colspan="3">Student Records</td>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </section>
+
+
+        <hr>
+
+
+        <section id="media">
+
+            <h2>Media Section</h2>
+
+
+            <figure>
+
+                <img src="https://via.placeholder.com/200">
+
+                <figcaption>Sample Image</figcaption>
+
+            </figure>
+
+
+            <h3>Audio</h3>
+
+            <audio controls>
+
+                <source src="sample.mp3" type="audio/mpeg">
+
+            </audio>
+
+
+            <h3>Video</h3>
+
+            <video width="300" controls>
+
+                <source src="sample.mp4" type="video/mp4">
+
+            </video>
+
+
+            <h3>Iframe</h3>
+
+            <iframe src="https://example.com" width="300" height="200"></iframe>
+
+
+        </section>
+
+
+        <hr>
+
+
+        <section>
+
+            <h2>Extra Elements</h2>
+
+
+            <details>
+
+                <summary>Click to read more</summary>
+
+                <p>This content is hidden inside details tag.</p>
+
+            </details>
+
+
+            <meter value="60" min="0" max="100"></meter>
+
+
+        </section>
+
+
     </main>
+
 
     <hr>
 
+
     <footer>
 
-        <p>&copy; 2026 HTML Demo Project</p>
+        <p>© 2026 Interactive Web Project</p>
 
-        <p>
-            <a href="#">Home</a> |
-            <a href="#">About</a> |
-            <a href="#">Contact</a>
-        </p>
-
-        <small>All rights reserved</small>
+        <small>Created for HTML CSS JavaScript practice</small>
 
     </footer>
+
+
+    <script src="script.js"></script>
+
 
 </body>
 
